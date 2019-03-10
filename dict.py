@@ -11,7 +11,7 @@ def similar(word1, word2_list):
 
 def defination(word):
     word = word.lower()
-    with open("data.json", "r") as myfile:
+    with open("your file location", "r") as myfile:
         data = json.load(myfile);
     if word in data.keys():
         return data[word]
